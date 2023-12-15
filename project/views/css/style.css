@@ -1,0 +1,199 @@
+
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+  }
+    
+   .bg-dark, .btn-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+   .nav .nav-link.active {
+    color: #fff;
+  }
+
+  li {
+    list-style: none;
+    margin: 20px 0 20px 0;
+  }
+
+  a.nav-link {
+    color:  #6c757d;
+    margin-left: -15px;
+    margin-bottom: 7px;
+  }
+
+  a.nav-link span{
+    margin-left: 10px;
+  }
+
+  a.nav-link:hover {
+    color: white;
+  }
+
+  #nav-link-tabel-data:hover{
+    color: white;
+  }
+
+  .countData{
+  font-size: 50px;
+  }
+
+  .iconTotalBarang{
+    font-size: 120px; 
+    position: absolute; 
+    right: 10px;  
+    transform: rotate(25deg);
+    opacity: 0.4;
+    bottom: 6px;
+  }
+  .iconTotalJb{
+    font-size: 120px; 
+    position: absolute; 
+    right: 25px;  
+    transform: rotate(25deg);
+    opacity: 0.4;
+    bottom: -10px;
+  }
+  .iconTotalAdmin{
+    font-size: 120px;
+    position: absolute;
+    right: 5px;
+    transform: rotate(20deg);
+    opacity: 0.4;
+    bottom: 3px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.iconSettingProfil{
+  font-size: 120px;
+  position: absolute;
+  right: 13px;
+  transform: rotate(25deg);
+  opacity: 0.4;
+  bottom: 1px;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+}
+
+  .sidebar {
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    margin-left: 0;
+    transition: 0.4s;
+    overflow: scroll auto;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+  .active-sidebar {
+    margin-left: -300px;
+  }
+
+  .main-content {
+    margin-left: 250px;
+    transition: 0.4s;
+  }
+
+  .active-main-content {
+    margin-left: 0px;
+  }
+
+  .brand{
+    margin-right: 46px;
+    margin-left: 10px;
+  }
+
+  .register-card .card{
+    width: 75%;
+    margin: auto;
+  }
+
+  .table tr {
+    padding: 0.2em 0.5em; 
+  }
+
+
+  @media (max-width: 768px) {
+    
+.sidebar {
+margin-left: -300px; /* Sembunyikan sidebar pada layar yang lebih kecil dari 768px */
+}
+.active-sidebar {
+    margin-left: 0px;
+  }
+.main-content {
+    margin-left: 0px;
+  }
+
+.brand{
+margin-right: 150px;
+}
+
+.main-content .container-fluid .card{
+  width: 100%;
+}
+
+.marquee{
+  display: none;
+}
+}
